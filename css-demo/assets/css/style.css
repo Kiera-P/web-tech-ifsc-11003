@@ -8,6 +8,15 @@ html {
 *:after {
   box-sizing: inherit;
 }
+/*---Utility Classes---*/
+
+.container{
+width: 80vw;
+margin: 40px auto;
+max width:960px;
+}
+
+
 
 /*  ---------------Global Styles----------------- */
 body {
@@ -74,4 +83,18 @@ header.primary nav a{
 
 header.primary nav a:hover {
   background-color:rgba(0,0,0,.8);
+}
+
+/*------Media Queries-----*/
+
+@media screen and (max-width:600px){
+header.primary nav ul{
+  flex-direction:column;
+gap: 10px;
+}
+
+header.primary nav a {
+  display:block;
+}
+
 }
